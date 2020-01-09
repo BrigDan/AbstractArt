@@ -1,8 +1,18 @@
 #pragma once
 
 #include "ofMain.h"
+#include "Rectangles.hpp"
+#include "Circles.hpp"
+#include "Lines.hpp"
+#include "Triangles.hpp"
 
 class ofApp : public ofBaseApp{
+    
+private:
+    Rectangles rectangles;
+    Circles circles;
+    Lines lines;
+    Triangles triangles;
 
 	public:
 		void setup();
@@ -12,13 +22,7 @@ class ofApp : public ofBaseApp{
 		void keyPressed(int key);
 		void keyReleased(int key);
 		void mouseMoved(int x, int y );
-		void mouseDragged(int x, int y, int button);
 		void mousePressed(int x, int y, int button);
 		void mouseReleased(int x, int y, int button);
-		void mouseEntered(int x, int y);
-		void mouseExited(int x, int y);
-		void windowResized(int w, int h);
-		void dragEvent(ofDragInfo dragInfo);
-		void gotMessage(ofMessage msg);
 		
 };

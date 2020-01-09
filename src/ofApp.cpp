@@ -2,17 +2,27 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    rectangles.setup();
+    circles.setup();
+    lines.setup();
+    triangles.setup();
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    rectangles.update();
+    circles.update();
+    lines.update();
+    triangles.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    rectangles.draw();
+    circles.draw();
+    lines.draw();
+    triangles.draw();
 }
 
 //--------------------------------------------------------------
@@ -31,41 +41,11 @@ void ofApp::mouseMoved(int x, int y ){
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
 }
